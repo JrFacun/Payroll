@@ -5,14 +5,16 @@ namespace App\Http\Controllers\management;
 use App\Http\Controllers\Controller;
 use App\Models\Form;
 use Illuminate\Http\Request;
-
+use DB;
 class EmployementController extends Controller
 {
     public function EmployeeManagement()
     {
         return view('welcome');
     }
-
+    public function Payroll(){
+        return view('PayrollUI', );
+    }
     //Get Data 
     public function getData()
     {

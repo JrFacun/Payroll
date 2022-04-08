@@ -1,4 +1,6 @@
 <?php
+
+use App\Http\Controllers\management\EmployementController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,5 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('EmpMngUI');
 });
+
 //Register page
-Route::get('/EmployeeManagement', [EmployementController::class,'EmployeeManagement']);
+Route::get('/EmpMngUI', [EmployementController::class,'EmployeeManagement']);
+Route::get('/PayrollUI', [EmployementController::class,'Payroll']);
